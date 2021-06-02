@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    properties:
+       hibernate:
+          format_sql: true
+          dialect: org.hibernate.dialect.H2Dialect
+      
+      
+security:
+  jwt:
+    header: Authorization
+    prefix: Bearer
+    # expiration: 86400 #un dia
+    expiration: 3600
+    # COLOCAR UNA SECRETO DIFERENTE POR PROYECTO
+    secret: RAMDOM_STRING
+    
