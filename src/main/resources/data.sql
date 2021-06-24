@@ -1,9 +1,9 @@
 INSERT INTO CLIENT (
 ID_CLIENTE, FEC_NACIMIENTO_CLIENTE ,CORREO_CLIENTE ,APELLIDO_CLIENTE ,NOMBRE_CLIENTE ,NUM_IDENTIFICATION_CLIENTE ,ESTADO_CIVIL_CLIENTE ) 
 values 
-(1,'1967-10-09', 'test@gmail.com' , 'Perez' ,'Jose', '1746039118' , 'c'),
-(2,'1987-09-09', 'test1@gmail.com' , 'Calle' ,'Maria', '1750030060' , 's'),
-(3, '1977-08-09', 'test2@gmail.com' , 'Almeida' ,'Juan', '1711889461' , 'd');
+(1,'1967-10-09', 'dflasso1@espe.edu.ec' , 'Lasso' ,'Dany', '1746039118' , 'c'),
+(2,'1987-09-09', 'stalin@hotmail.com' , 'Crisanto' ,'Stalin', '1750030060' , 's'),
+(3, '1977-08-09', 'vxvaca1@espe.edu.ec' , 'Vaca' ,'Xavier', '1711889461' , 'd');
 
 
 INSERT INTO CUENTAS_CLIENTE (id_cuenta, num_cuenta, saldo_cuenta, tipo_cuenta, estado_cuenta, id_cliente)
