@@ -16,7 +16,6 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -29,7 +28,6 @@ public class CreditsClient {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_credito")
-	@JsonIgnore
 	private Long id;
 	
 	@Column(name = "capital_por_cobrar", scale = 8, precision = 2)
@@ -54,15 +52,15 @@ public class CreditsClient {
 	
 	@Column(name = "cuota_mensual", scale = 8, precision = 2)
 	@ApiModelProperty(notes = "Valor cutoa mensual")
-	private Double monthlyFeeTotal;
+	private Double monthlyFee;
 	
 	@Column(name = "cuota_mensual_cancelada", scale = 8, precision = 2)
 	@ApiModelProperty(notes = "Total cutoas mensuales canceladas")
-	private Double monthlyFeeCanceled;
+	private Integer monthlyFeeCanceled;
 	
 	@Column(name = "cuota_mensual_pending", scale = 8, precision = 2)
 	@ApiModelProperty(notes = "Total cutoas mensuales pendientes")
-	private Double monthlyFeePending;
+	private Integer monthlyFeePending;
 	
 	@Column(name = "estado")
 	@ApiModelProperty(notes = "Total cutoas mensuales pendientes")
