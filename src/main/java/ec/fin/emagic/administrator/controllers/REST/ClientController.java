@@ -1,4 +1,4 @@
-package ec.fin.emagic.administrator.controllers;
+package ec.fin.emagic.administrator.controllers.REST;
 
 import java.util.List;
 
@@ -22,7 +22,7 @@ import net.kaczmarzyk.spring.data.jpa.web.annotation.Spec;
 import org.springframework.data.jpa.domain.Specification;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/api/v1")
 @Api(tags = "Clientes")
 public class ClientController {
 
